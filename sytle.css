@@ -1,0 +1,139 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+.flex2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(background.png);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color: #2195f3b0;
+}
+
+.panel{
+    height: 80vh;
+    width: 80vw;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.ptop{
+    height: 9vh;
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+
+.pbottom{
+    padding: 8px;
+    text-align: center;
+    height: calc(100% - 9vh);
+    background-color: rgb(65 73 132);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.bubble{
+    height: 40px;
+    width: 40px;
+    color: black;
+    font-weight: 800;
+    border-radius: 50%;
+    background-color: #e6ece6;
+}
+.bubble:hover{
+    cursor: pointer;
+    color: white;
+
+    background-color: rgb(80, 59, 59);
+}
+
+.box{
+    width: 40px;
+    height: 30px;
+    background-color: rgb(171 214 164);
+    border-radius: 3px;
+    font-weight: 600;
+}
+.newGame{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    background-color: green;
+    color: black;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 0.8px;
+    transition: all 0.8s;
+}
+
+.newGame:active{
+    transform: translateY(10px);
+}
+
+
+@media screen and (max-width: 550px) {
+    .ptop{
+        height: 15vh;
+        background-color: green;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box{
+        text-align: center;
+        width: 55px;
+        height: 37px;
+    }
+    .first , .second , .third{
+        display: flex;    
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+  }
+
+
+
